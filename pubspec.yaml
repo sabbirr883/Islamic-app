@@ -49,6 +49,10 @@ dependencies:
   equatable:
   http:
   shared_preferences:
+  flutter_svg: ^2.0.10+1
+  salomon_bottom_bar: ^3.3.2
+  flutter_islamic_icons: ^1.0.2
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:

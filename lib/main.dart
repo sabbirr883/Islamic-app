@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:halakat/ui/pages/home_page.dart';
 import 'package:halakat/ui/pages/memorize_page.dart';
 
@@ -11,13 +13,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home:  MemorizePage(),
+    return ScreenUtilInit(
+      designSize: const Size(374, 812),
+       // 360, 690
+     builder: (context,child){
+        return GetMaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          debugShowCheckedModeBanner: false,
+          home:  HomePage(),
+        );
+     },
     );
   }
 }
