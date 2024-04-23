@@ -6,8 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../const/app_colors.dart';
 import 'memorize_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class GetStartPage extends StatelessWidget {
+  const GetStartPage({super.key});
 
   @override
   Widget build(BuildContext context) {

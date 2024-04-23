@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:halakat/ui/pages/home_page.dart';
+import 'package:halakat/ui/pages/get_started_page.dart';
 import 'package:halakat/ui/pages/memorize_page.dart';
 
 void main() {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
           ),
           debugShowCheckedModeBanner: false,
-          home:  HomePage(),
+          home:  const GetStartPage(),
         );
      },
     );
