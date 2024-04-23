@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:halakat/ui/pages/home_page.dart';
 
 import '../../const/app_colors.dart';
 import 'memorize_page.dart';
@@ -34,7 +35,7 @@ class GetStartPage extends StatelessWidget {
                   Positioned(
                     bottom: -25,
                     child: ElevatedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>MemorizePage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
                     }, child: Text('Get Started',style:GoogleFonts.poppins(fontSize: 18.sp,fontWeight: FontWeight.w600),),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.buttonColor,
